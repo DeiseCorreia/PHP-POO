@@ -8,11 +8,20 @@
     <title>CURSO POO PHP</title>
 </head>
 <body>
+<pre>
     <?php
-        require_once 'Caneta.php';
+        require_once 'Caneta01.php';
 
         $c1 = new Caneta();
-        $c1->cor = 'Azul';
+        $c1->modelo ="Bic Cristal";
+        $c1->cor ="azul";
+        //$c1->ponta =0.5;
+        //$c1->carga =22;
+        //$c1->tampada =true;
+        print_r($c1);
+        $c1->rabiscar();
+        $c1->tampar();
+        /*$c1->cor = 'Azul';
         $c1->ponta = 0.5;
         $c1->tampada = false;//o -> tem quase a mesma função do . no java
         $c1->tampar();
@@ -37,7 +46,8 @@
 
         $p1->Disponivel();
         print_r($p1);
-
+    */
     ?>
+</pre>
 </body>
 </html>
